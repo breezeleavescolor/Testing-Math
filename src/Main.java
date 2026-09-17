@@ -81,8 +81,7 @@ public class Main {
             "-7.4, -8.3, -9.2"
     })
     public void testDividing(double base, double a, double b) {
-
-        xa / xb = xa-b
+        assertEquals(Math.pow(base,a)/Math.pow(base,b),Math.pow(base,a-b),"x^a / x^b should equal x^a-b");
     }
 
 
