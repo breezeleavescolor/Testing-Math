@@ -122,7 +122,7 @@ public class Main {
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroBase(double exponent) {
-        0x = 0
+        assertEquals(Math.pow(0,exponent),0,"0^x should equal x");
     }
 
 }
