@@ -108,7 +108,7 @@ public class Main {
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroPower(double base) {
-        x0 = 1
+        assertEquals(Math.pow(base,0),1,"x^0 should equal 1");
     }
 
 
