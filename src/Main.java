@@ -118,7 +118,12 @@ public class Main {
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroBase(double exponent) {
-        assertEquals(Math.pow(0,exponent),0,"0^x should equal x");
+        if (exponent > 0) {
+            assertEquals(Math.pow(0,exponent),0,"0^x should equal 0");
+        } else {
+            assertEquals(1.0/Math.pow(0,exponent),0,"0^x should equal 0");
+        }
+
     }
 
 }
