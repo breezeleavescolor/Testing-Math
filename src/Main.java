@@ -5,10 +5,6 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
-    }
-
     @ParameterizedTest
     @CsvSource({
             "6, 5",
